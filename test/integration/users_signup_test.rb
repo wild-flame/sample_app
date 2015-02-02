@@ -7,7 +7,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   #
   test "signup using invalid information" do
     get signup_path
-    
+
     assert_no_difference 'User.count' do
       post users_path, user: { name:  "",
                                email: "user@invalid",
@@ -21,6 +21,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     # assert_equal before_count, after_count
 
     assert_template 'users/new'
+    assert_select 'div#<CSS id for error explanation>'
+    assert_select 'div.<CSS class for field with error>'
   end
 
   test "valid signup information" do
@@ -35,5 +37,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                             password_confirmation: password }
     end
     assert_template 'users/show'
+    assert_not flash.nil?
   end
 end
