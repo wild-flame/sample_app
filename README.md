@@ -34,3 +34,8 @@ TIPS:
    ```
 
 4. `.form-control`在Bootstrap里面的意义
+
+3. A boolean attribute admin on users automatically gives a user.admin? boolean method.
+ 
+5. 注意：363页里 UserMailer的父类是ApplicationMailer, 而不是书里写的ActionMailer::BASE
+
