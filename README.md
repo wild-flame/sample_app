@@ -11,7 +11,7 @@ by [Michael Hartl](http://www.michaelhartl.com/).
 
 ## 演示地址：
 
-Railtutorail第三版Demo（当前项目）：（未配置邮件服务）
+Railtutorail第三版Demo（当前项目）：（未配置邮件服务，未配置Amazon S3的图片上传服务）
 
 http://salty-tor-8375.herokuapp.com/
 
