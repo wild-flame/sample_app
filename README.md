@@ -15,6 +15,12 @@ Railtutorail第三版Demo（当前项目）：（未配置邮件服务，未配�
 
 http://salty-tor-8375.herokuapp.com/
 
+Example User:
+
+```
+             email: "example@railstutorial.org",
+             password: "foobar",
+```
 Railtutorial第二版Demo：
 
 http://mighty-meadow-4109.herokuapp.com/
@@ -37,5 +43,10 @@ TIPS:
 
 3. A boolean attribute admin on users automatically gives a user.admin? boolean method.
  
-5. 注意：363页里 UserMailer的父类是ApplicationMailer, 而不是书里写的ActionMailer::BASE
+5. 注意：363页里 UserMailer的父类是ApplicationMailer, 而不是书里写的ActionMailer::BASE，所以要修改ApplictationMailer
 
+6. 注意：394页里 rails generate model Micropost content:text user:references 生成的migration文件和书里不太一样，自动生成了外键，不影响。
+
+7. 注意: 471页括号内应为Passive Relationship 而不是 Positive Relationship
+
+8. 错别字：492也“显式”应为“显示”。
